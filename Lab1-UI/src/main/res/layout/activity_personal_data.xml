@@ -27,7 +27,6 @@
         app:layout_constraintTop_toBottomOf="@+id/containerText_Apellidos">
 
         <RadioButton
-            android:id="@+id/radio_hombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="12sp"
@@ -38,7 +37,6 @@
 
 
         <RadioButton
-            android:id="@+id/radio_mujer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
