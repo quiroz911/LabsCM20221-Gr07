@@ -1,3 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">LabsCM20221-Gr07</string>
+    <string name="app_name">Personal Information</string>
+    <string-array name="options_grade">
+        <item>School grade</item>
+        <item>Elementary</item>
+        <item>Secondary</item>
+        <item>University</item>
+        <item>Other</item>
+    </string-array>
 </resources>

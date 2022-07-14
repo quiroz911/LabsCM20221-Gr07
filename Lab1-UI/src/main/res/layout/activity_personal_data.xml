@@ -1,148 +1,238 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="32dp"
+    android:fadeScrollbars="false"
+    android:fadingEdge="horizontal"
+    android:isScrollContainer="true"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbars="horizontal|vertical"
     tools:context=".PersonalDataActivity">
 
 
-    <TextView
-        android:id="@+id/textView"
+    <RadioGroup
+        android:id="@+id/radioGroup_Sexo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="112dp"
-        android:layout_marginEnd="251dp"
-        android:layout_marginBottom="600dp"
-        android:text="Información Personal"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.392"
+        app:layout_constraintStart_toEndOf="@+id/text_sexo"
+        app:layout_constraintTop_toBottomOf="@+id/containerText_Apellidos">
 
-    <View
-        android:id="@+id/divider"
-        android:layout_width="409dp"
-        android:layout_height="1dp"
-        android:layout_marginTop="23dp"
-        android:layout_marginBottom="576dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        <RadioButton
+            android:id="@+id/radio_hombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12sp"
+            android:layout_marginRight="12sp"
+            android:text="man"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="57dp"
-        android:layout_height="58dp"
+
+        <RadioButton
+            android:id="@+id/radio_mujer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="woman"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/text_sexo"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="333dp"
-        android:layout_marginBottom="500dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider"
-        app:layout_constraintVertical_bias="1.0"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:text="gender"
+        app:layout_constraintStart_toEndOf="@+id/UsersIcon"
+        app:layout_constraintTop_toBottomOf="@+id/containerText_Apellidos" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="326dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="58dp"
-        android:layout_marginEnd="1dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        tools:layout_editor_absoluteY="174dp">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="316dp"
-            android:layout_height="wrap_content"
-            android:hint="Ingrese su nombre" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="325dp"
-        android:layout_height="58dp"
-        tools:layout_editor_absoluteX="82dp"
-        tools:layout_editor_absoluteY="248dp">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="314dp"
-            android:layout_height="wrap_content"
-            android:hint="Ingrese su apellido" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <RadioButton
-        android:id="@+id/radioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hombre"
-        tools:layout_editor_absoluteX="201dp"
-        tools:layout_editor_absoluteY="329dp" />
-
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="87dp"
-        android:layout_height="49dp"
-        android:text="Mujer"
-        tools:layout_editor_absoluteX="308dp"
-        tools:layout_editor_absoluteY="328dp" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="59dp"
-        android:layout_height="22dp"
-        android:text="Sexo:"
-        tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="355dp" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fecha de nacimineto:"
-        tools:layout_editor_absoluteX="82dp"
-        tools:layout_editor_absoluteY="417dp" />
+        android:id="@+id/text_fecha"
+        android:layout_width="125dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="birthday"
+        app:layout_constraintStart_toEndOf="@+id/CalendarIcon"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup_Sexo" />
 
     <EditText
-        android:id="@+id/editTextDate2"
-        android:layout_width="158dp"
-        android:layout_height="44dp"
-        android:ems="10"
-        android:inputType="date"
-        tools:layout_editor_absoluteX="238dp"
-        tools:layout_editor_absoluteY="402dp" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
+        android:id="@+id/select_fecha"
+        android:layout_width="151dp"
         android:layout_height="wrap_content"
-        android:text="Grado de escolaridad:"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="467dp" />
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Change"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        android:maxLines="1"
+        android:minHeight="48dp"
+        android:textColor="#26363C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.224"
+        app:layout_constraintStart_toEndOf="@+id/text_fecha"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup_Sexo"
+        tools:ignore="TextContrastCheck" />
 
     <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="181dp"
-        android:layout_height="23dp"
-        tools:layout_editor_absoluteX="228dp"
-        tools:layout_editor_absoluteY="467dp" />
+        android:id="@+id/spinner_grado"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:entries="@array/options_grade"
+        android:minHeight="48dp"
+        android:theme="@style/SpinnerTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/GraduationCapIcon"
+        app:layout_constraintTop_toBottomOf="@+id/select_fecha" />
+
+    <ImageView
+        android:id="@+id/UserIcon"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/containerText_Apellidos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?android:attr/fingerprintAuthDrawable" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/containerText_Nombres"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/UserIcon"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_Nombres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="textCapSentences|textNoSuggestions|textEmailAddress"
+            android:textSize="20sp"
+            tools:ignore="TextContrastCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/containerText_Apellidos"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/UserAddIcon"
+        app:layout_constraintTop_toBottomOf="@+id/containerText_Nombres">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_Apellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last name"
+            android:inputType="textCapSentences|textNoSuggestions|textEmailAddress"
+            android:textSize="20sp"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/UserAddIcon"
+        android:layout_width="38dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerText_Nombres"
+        app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
+    <ImageView
+        android:id="@+id/UsersIcon"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UserAddIcon"
+        app:srcCompat="@android:drawable/ic_menu_help" />
+
+    <ImageView
+        android:id="@+id/CalendarIcon"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UsersIcon"
+        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+    <ImageView
+        android:id="@+id/GraduationCapIcon"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CalendarIcon"
+        app:srcCompat="@android:drawable/ic_menu_mapmode" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_sgte"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Siguiente"
-        tools:layout_editor_absoluteX="282dp"
-        tools:layout_editor_absoluteY="506dp" />
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="16dp"
+        android:text="next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_grado"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/aclaracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="next"
+        android:textColor="#BFA19F9F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_sgte"
+        tools:ignore="TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
