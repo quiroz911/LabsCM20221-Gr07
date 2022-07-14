@@ -69,4 +69,80 @@
             android:hint="Ingrese su nombre" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="325dp"
+        android:layout_height="58dp"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="248dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="314dp"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese su apellido" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hombre"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="329dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="87dp"
+        android:layout_height="49dp"
+        android:text="Mujer"
+        tools:layout_editor_absoluteX="308dp"
+        tools:layout_editor_absoluteY="328dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="59dp"
+        android:layout_height="22dp"
+        android:text="Sexo:"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="355dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha de nacimineto:"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="417dp" />
+
+    <EditText
+        android:id="@+id/editTextDate2"
+        android:layout_width="158dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="date"
+        tools:layout_editor_absoluteX="238dp"
+        tools:layout_editor_absoluteY="402dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grado de escolaridad:"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="467dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="181dp"
+        android:layout_height="23dp"
+        tools:layout_editor_absoluteX="228dp"
+        tools:layout_editor_absoluteY="467dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siguiente"
+        tools:layout_editor_absoluteX="282dp"
+        tools:layout_editor_absoluteY="506dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
