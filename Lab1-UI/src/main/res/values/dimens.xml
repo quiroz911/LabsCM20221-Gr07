@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margen">16dp</dimen>
+    <dimen name="tamañoTexto">20sp</dimen>
+    <dimen name="textoS">14sp</dimen>
+    <dimen name="minimo">48dp</dimen>
+</resources>

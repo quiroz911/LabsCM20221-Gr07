@@ -212,13 +212,13 @@
         android:id="@+id/button_sgte"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="108dp"
+        android:layout_marginEnd="52dp"
         android:layout_marginBottom="16dp"
         android:text="next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner_grado"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.075"
         tools:ignore="TextContrastCheck" />
 
     <TextView

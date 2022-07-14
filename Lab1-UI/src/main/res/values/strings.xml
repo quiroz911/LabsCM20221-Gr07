@@ -8,4 +8,23 @@
         <item>University</item>
         <item>Other</item>
     </string-array>
+
+    <string-array name="latin_american_countries">
+        <item>Canada</item>
+        <item>Andorra</item>
+        <item>España</item>
+        <item>Alemania</item>
+        <item>Colombia</item>
+        <item>Brasil</item>
+        <item>Italia</item>
+        <item>Aergentina</item>
+        <item>Australia</item>
+    </string-array>
+
+    <string name="dialog">Warning</string>
+    <string name="mensajePersonal">Information has been fulfilled</string>
+    <string name="mensajeContacto">Contact information has been fulfilled</string>
+    <string name="ErrorFecha">Wrong date</string>
+    <string name="Informacion">Contact Date:</string>
+    <string name="ok">Acept</string>
 </resources>
