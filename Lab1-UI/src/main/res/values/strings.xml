@@ -1,3 +1,40 @@
 <resources>
-    <string name="app_name">LabsCM20221-Gr07</string>
+<string name="app_name">LabsCM20221-Gr07</string>
+<string name="informacion">Personal Information</string>
+<string name="nombre">Nombre</string>
+<string name="apellido">Apellido</string>
+<string name="label">Gender</string>
+<string name="male_gender">Hombre</string>
+<string name="mujer">Mujer</string>
+<string name="cumpleaños">Fecha de nacimiento</string>
+<string name="Nivel">Nivel de Educación</string>
+<string-array name="nivelE">
+    <item>colegio</item>
+    <item>universidad</item>
+</string-array>
+<string-array name="latin_american_countries">
+    <item>Canada</item>
+    <item>Andorra</item>
+    <item>España</item>
+    <item>Alemania</item>
+    <item>Colombia</item>
+    <item>Brasil</item>
+    <item>Italia</item>
+    <item>Aergentina</item>
+    <item>Australia</item>
+</string-array>
+<string name="informacionContacto">Informacion de Contacto</string>
+<string name="telefono">Telefono</string>
+<string name="email">Email</string>
+<string name="pais">Pais</string>
+<string name="ciudad">Ciudad</string>
+<string name="nextB">Siguiente</string>
+
+<string name="dialog">Warning</string>
+<string name="mensajePersonal">has completado la informacion</string>
+<string name="mensajeContacto">se ha completado la informacion de contacto</string>
+<string name="ErrorFecha">fecha incorrecta</string>
+<string name="Informacion">informacion de contacto:</string>
+<string name="ok">Acept</string>
+
 </resources>
